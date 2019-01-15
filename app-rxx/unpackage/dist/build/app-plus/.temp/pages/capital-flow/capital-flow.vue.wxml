@@ -1,0 +1,31 @@
+<template name="5b923932">
+  <view class="_view data-v-54ca0d34 content">
+    <view class="_view data-v-54ca0d34 con-wrap">
+      <view class="_view data-v-54ca0d34 capital-title">信用贷款</view>
+      <view class="_view data-v-54ca0d34 cell-mid">
+        <view class="_view data-v-54ca0d34">
+          <view class="_view data-v-54ca0d34 amount">5万元</view>
+          <view class="_view data-v-54ca0d34 des">贷款金额</view>
+        </view>
+        <view class="_view data-v-54ca0d34 mar110">
+          <view class="_view data-v-54ca0d34 date">3个月</view>
+          <view class="_view data-v-54ca0d34 des">贷款期限</view>
+        </view>
+        <view class="_view data-v-54ca0d34">
+          <view class="_view data-v-54ca0d34 time">18:30:04</view>
+          <view class="_view data-v-54ca0d34 des">发布时间</view>
+        </view>
+      </view>
+      <view class="_view data-v-54ca0d34 cell-btm">
+        <view class="_view data-v-54ca0d34 info-title">基本信息</view>
+        <view class="_view data-v-54ca0d34 user-info">
+          <view class="_view data-v-54ca0d34">姓名: 周小姐</view>
+          <view class="_view data-v-54ca0d34">年龄: 28</view>
+          <view class="_view data-v-54ca0d34">月收入: 15000</view>
+          <view class="_view data-v-54ca0d34">信用情况: 少于3次预期</view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-54ca0d34 tips">提示：此信息由客户自信提交，请自行审核判断真伪</view>
+  </view>
+</template>

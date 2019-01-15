@@ -1,0 +1,31 @@
+<template name="0388d452">
+  <view class="_view data-v-067eaf58 content">
+    <view class="_view data-v-067eaf58 uni-list">
+      <view class="_view data-v-067eaf58 uni-list-cell">
+        <view class="_view data-v-067eaf58 order-number">订单编号: {{orderNumber}} </view>
+        <view class="_view data-v-067eaf58 cell-mid">
+          <view class="_view data-v-067eaf58 apply-money h-70">贷款额度: {{orderDetail.amount || 0}} </view>
+          <view class="_view data-v-067eaf58 apply-name h-70">产品名称: {{orderDetail.pruductname}} </view>
+          <view class="_view data-v-067eaf58 apply-type h-70">贷款类型: {{orderDetail.typename}} </view>
+          <view class="_view data-v-067eaf58 apply-type h-70">贷款周期: {{orderDetail.cyclename || ''}} </view>
+          <view class="_view data-v-067eaf58 state">{{state[orderDetail.STATUS - 1]}}</view>
+        </view>
+        <view wx:if="{{orderDetail.STATUS !== 1}}" class="_view data-v-067eaf58 user-info">
+          <view class="_view data-v-067eaf58 top-wrap">
+            <view class="_view data-v-067eaf58 top-title">信贷经理信息</view>
+          </view>
+          <image class="_image data-v-067eaf58 head-logo" src="{{logoSrc}}" mode="widthFix"></image>
+          <view class="_view data-v-067eaf58 manager">贷款经理: {{orderDetail.CUSTOMER.user.NAME}}</view>
+          <view class="_view data-v-067eaf58 manager-mobile">电话: {{orderDetail.CUSTOMER.user.PHONE}}</view>
+          <view class="_view data-v-067eaf58 praise-wrap">
+            <view bindtap="handleProxy" class="_view data-v-067eaf58 star-cont" wx:key="index" key="{{index}}" data-eventid="{{'EK1-0-'+index}}" data-comkey="{{$k}}" wx:for="{{starList}}" wx:for-index="index" wx:for-item="item">
+              <image wx:if="{{oIndex < index}}" class="_image data-v-067eaf58 star" src="../../static/img/def-star.png" mode="widthFix"></image>
+              <image wx:else class="_image data-v-067eaf58 star" src="../../static/img/light-star.png" mode="widthFix"></image>
+            </view>
+          </view>
+          <view class="_view data-v-067eaf58 praise-me">请为我点个赞吧</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

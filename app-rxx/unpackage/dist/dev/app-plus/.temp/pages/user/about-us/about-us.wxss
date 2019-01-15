@@ -1,0 +1,7 @@
+@import "../../../common/vendor.wxss";
+
+.content {
+  text-align: center;
+  font-size: 30rpx;
+  margin-top: 150rpx;
+}

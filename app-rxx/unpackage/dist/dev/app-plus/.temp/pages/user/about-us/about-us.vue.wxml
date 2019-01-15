@@ -1,0 +1,3 @@
+<template name="cde5904c">
+  <rich-text class="_view data-v-3cbb6d69 content" nodes="{{content}}"></rich-text>
+</template>

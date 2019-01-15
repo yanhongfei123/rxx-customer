@@ -1,0 +1,2 @@
+@import "../../../common/vendor.wxss";
+._input{text-align:right}.choose-img,.placeholder{color:#bbb;font-size:32rpx}.choose-img{-webkit-box-flex:1;-webkit-flex:1;flex:1;height:100%;line-height:116rpx}.reg-label{margin:40rpx 0 0}.btn-row{width:690rpx;margin:70rpx auto}.picker-item{width:100%;text-align:right!important;font-size:34rpx!important;color:#454545}.picker-item .picker-btn{height:116rpx;line-height:116rpx;padding-right:30rpx}

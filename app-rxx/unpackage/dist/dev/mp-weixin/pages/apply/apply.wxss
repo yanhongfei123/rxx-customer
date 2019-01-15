@@ -1,0 +1,39 @@
+@import "../../common/vendor.wxss";
+
+@charset "UTF-8";
+.btn-row {
+  width: 690rpx;
+  margin: 120rpx auto;
+}
+.input-row {
+  position: relative;
+  text-align: right;
+}
+.input-row ._input {
+  text-align: right;
+}
+.input-row .title {
+  width: 160rpx;
+  text-align: left;
+}
+.input-row .rate {
+  color: #FF9833;
+}
+.input-row .icon {
+  width: 0;
+  height: 0;
+  border: 18rpx solid transparent;
+  border-bottom: none;
+  border-top-color: #BBB;
+}
+.picker-item {
+  width: 60%;
+  text-align: right !important;
+  font-size: 34rpx !important;
+  color: #454545;
+}
+.picker-item .picker-btn {
+  height: 116rpx;
+  line-height: 116rpx;
+  padding-right: 30rpx;
+}

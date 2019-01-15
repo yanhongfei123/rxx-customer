@@ -1,0 +1,18 @@
+@import "../../common/vendor.wxss";
+
+._button[type=primary] {
+  width: 690rpx;
+  margin: 25rpx auto;
+  background-color: #F5F5F5;
+  border: 2rpx solid #FF9833;
+  border-radius: 50rpx;
+  color: #FF9833;
+}
+.no-data {
+  text-align: center;
+  font-size: 30rpx;
+  margin-top: 150rpx;
+}
+image {
+  width: 100%;
+}

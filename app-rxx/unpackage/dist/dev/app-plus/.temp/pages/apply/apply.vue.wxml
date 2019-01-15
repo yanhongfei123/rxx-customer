@@ -1,0 +1,37 @@
+<import src="/components/uni-input.vue.wxml" />
+<template name="3e3048ee">
+  <view class="_view data-v-4c6bf6bf content">
+    <view class="_view data-v-4c6bf6bf reg-label"></view>
+    <view class="_view data-v-4c6bf6bf input-group">
+      <view class="_view data-v-4c6bf6bf input-row  space-between">
+        <text class="_text data-v-4c6bf6bf title">贷款产品</text>
+        <template bindinput="handleProxy" type="text" value="{{name}}" bindchange="handleProxy" placeholder="请输入贷款产品" data-eventid="{{'p7q-0'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'kWd-0'],$root}}" is="123a2178"></template>
+      </view>
+      <view class="_view data-v-4c6bf6bf input-row  space-between">
+        <text class="_text data-v-4c6bf6bf title">贷款额度</text>
+        <template bindinput="handleProxy" type="text" value="{{apply.amount}}" bindchange="handleProxy" placeholder="请输入贷款额度" data-eventid="{{'Nut-1'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'bRH-1'],$root}}" is="123a2178"></template>
+      </view>
+      <view class="_view data-v-4c6bf6bf input-row  space-between">
+        <text class="_text data-v-4c6bf6bf title">贷款类型</text>
+        <picker class="_picker data-v-4c6bf6bf picker-item" mode="selector" range="{{productList}}" range-key="name" bindchange="handleProxy" data-eventid="{{'in0-2'}}" data-comkey="{{$k}}">
+          <view class="_view data-v-4c6bf6bf">{{proType}}</view>
+        </picker>
+        <view class="_view data-v-4c6bf6bf icon"></view>
+      </view>
+      <view class="_view data-v-4c6bf6bf input-row  space-between">
+        <text class="_text data-v-4c6bf6bf title">贷款周期</text>
+        <picker class="_picker data-v-4c6bf6bf picker-item" mode="selector" range="{{productDate}}" range-key="name" bindchange="handleProxy" data-eventid="{{'Yn2-3'}}" data-comkey="{{$k}}">
+          <view class="_view data-v-4c6bf6bf">{{dateType}}</view>
+        </picker>
+        <view class="_view data-v-4c6bf6bf icon"></view>
+      </view>
+      <view class="_view data-v-4c6bf6bf input-row  space-between">
+        <text class="_text data-v-4c6bf6bf title">贷款手续费</text>
+        <view class="_view data-v-4c6bf6bf rate">1%</view>
+      </view>
+    </view>
+    <view class="_view data-v-4c6bf6bf btn-row">
+      <button type="primary" disabled="{{!apply.amount}}" bindtap="handleProxy" data-eventid="{{'sPs-4'}}" data-comkey="{{$k}}" class="_button data-v-4c6bf6bf">立即申请</button>
+    </view>
+  </view>
+</template>

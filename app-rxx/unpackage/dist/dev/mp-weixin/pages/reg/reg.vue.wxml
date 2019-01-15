@@ -1,0 +1,28 @@
+<import src="/components/countDown/countDown.vue.wxml" />
+<template name="1459d8c3">
+  <view class="_view data-v-c6a5ed64 content">
+    <view class="_view data-v-c6a5ed64 reg-label">新用户注册</view>
+    <view class="_view data-v-c6a5ed64 input-group">
+      <view class="_view data-v-c6a5ed64 input-row">
+        <text class="_text data-v-c6a5ed64 title">姓名：</text>
+        <input type="text" focus value="{{NAME}}" bindinput="handleProxy" placeholder-class="placeholder" placeholder="请输入您的姓名" data-eventid="{{'uwH-0'}}" data-comkey="{{$k}}" class="_input data-v-c6a5ed64" />
+      </view>
+      <view class="_view data-v-c6a5ed64 input-row">
+        <text class="_text data-v-c6a5ed64 title">手机号：</text>
+        <input type="text" maxlength="11" placeholder-class="placeholder" value="{{PHONE}}" bindinput="handleProxy" placeholder="请输入手机号码" data-eventid="{{'Nlb-1'}}" data-comkey="{{$k}}" class="_input data-v-c6a5ed64" />
+      </view>
+      <view class="_view data-v-c6a5ed64 input-row">
+        <text class="_text data-v-c6a5ed64 title">密码：</text>
+        <input type="password" placeholder-class="placeholder" value="{{PASSWORD}}" bindinput="handleProxy" placeholder="请输入密码" data-eventid="{{'6Qp-2'}}" data-comkey="{{$k}}" class="_input data-v-c6a5ed64" />
+      </view>
+      <view class="_view data-v-c6a5ed64 input-row">
+        <text class="_text data-v-c6a5ed64 title">验证码：</text>
+        <input type="text" placeholder-class="placeholder" maxlength="6" value="{{smscode}}" bindinput="handleProxy" placeholder="请输入短信验证码" data-eventid="{{'oBi-3'}}" data-comkey="{{$k}}" class="_input data-v-c6a5ed64" />
+        <template ref="countDown" color="FF9833" size="30" bindcountDown="handleProxy" data-eventid="{{'Q7z-4'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'YbQ-0'],$root}}" is="2f2a3541"></template>
+      </view>
+    </view>
+    <view class="_view data-v-c6a5ed64 btn-row">
+      <button type="primary" class="_button data-v-c6a5ed64 primary" disabled="{{_disabled}}" bindtap="handleProxy" data-eventid="{{'s41-5'}}" data-comkey="{{$k}}">注册</button>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,34 @@
+<template name="3e25acf3">
+  <view class="_view data-v-15068684 content">
+    <view class="_view data-v-15068684 pad30">
+      <view class="_view data-v-15068684 title">请选择充值金额</view>
+      <view class="_view data-v-15068684 uni-list">
+        <view bindtap="handleProxy" class="_view data-v-15068684 uni-list-cell {{[  item == '其他金额' ? 'colo_A4A3AC' : '',  chargeAmountIndex == index ? 'selected' : '']}}" wx:key="index" key="{{index}}" data-eventid="{{'YZl-0-'+index}}" data-comkey="{{$k}}"
+          wx:for="{{rechargeAmountList}}" wx:for-index="index" wx:for-item="item"> {{item}} </view>
+      </view>
+    </view>
+    <view class="_view data-v-15068684 line"></view>
+    <view class="_view data-v-15068684 pad30">
+      <view class="_view data-v-15068684 pay-title">请选择支付方式</view>
+      <view class="_view data-v-15068684 recharge-list">
+        <view bindtap="handleProxy" class="_view data-v-15068684 recharge-item {{[chargeTypeIndex == 0 ? 'choosed' : '']}}" data-eventid="{{'D7l-1'}}" data-comkey="{{$k}}">
+          <view class="_view data-v-15068684 recharge-type">
+            <image class="_image data-v-15068684 vm weixin-icon" src="../../static/img/img/weixin.png" mode="widthFix"></image>
+            <view class="_view data-v-15068684 recharge-weixin vm">微信支付</view>
+          </view>
+          <view class="_view data-v-15068684 select-btn"></view>
+        </view>
+        <view bindtap="handleProxy" class="_view data-v-15068684 recharge-item {{[chargeTypeIndex == 1 ? 'choosed' : '']}}" data-eventid="{{'7Cb-2'}}" data-comkey="{{$k}}">
+          <view class="_view data-v-15068684 recharge-type">
+            <image class="_image data-v-15068684 vm zfb-icon" src="../../static/img/img/zfb.png" mode="widthFix"></image>
+            <view class="_view data-v-15068684 recharge-zfb vm">支付宝支付</view>
+          </view>
+          <view class="_view data-v-15068684 select-btn">
+            <image src="../../static/img/img/" mode class="_image data-v-15068684"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <button bindtap="handleProxy" type="primary" id="primary" hover-class="other-button-hover" data-eventid="{{'9ct-3'}}" data-comkey="{{$k}}" class="_button data-v-15068684">立即充值</button>
+  </view>
+</template>

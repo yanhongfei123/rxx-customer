@@ -1,0 +1,36 @@
+<template name="47a35377">
+  <view class="_view data-v-f853147c content">
+    <view class="_view data-v-f853147c reg-label"></view>
+    <view class="_view data-v-f853147c input-group">
+      <view class="_view data-v-f853147c input-row  space-between">
+        <text class="_text data-v-f853147c title">贷款产品</text>
+        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{name}}" placeholder="请输入贷款产品" data-eventid="{{'iP3-0'}}" data-comkey="{{$k}}" class="_input data-v-f853147c" />
+      </view>
+      <view class="_view data-v-f853147c input-row  space-between">
+        <text class="_text data-v-f853147c title">贷款额度</text>
+        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{apply.amount}}" placeholder="请输入贷款额度" data-eventid="{{'2Up-1'}}" data-comkey="{{$k}}" class="_input data-v-f853147c" />
+      </view>
+      <view class="_view data-v-f853147c input-row  space-between">
+        <text class="_text data-v-f853147c title">贷款类型</text>
+        <picker class="_picker data-v-f853147c picker-item" mode="selector" range="{{productList}}" range-key="name" bindchange="handleProxy" data-eventid="{{'uq8-2'}}" data-comkey="{{$k}}">
+          <view class="_view data-v-f853147c">{{proType}}</view>
+        </picker>
+        <view class="_view data-v-f853147c icon"></view>
+      </view>
+      <view class="_view data-v-f853147c input-row  space-between">
+        <text class="_text data-v-f853147c title">贷款周期</text>
+        <picker class="_picker data-v-f853147c picker-item" mode="selector" range="{{productDate}}" range-key="name" bindchange="handleProxy" data-eventid="{{'0J6-3'}}" data-comkey="{{$k}}">
+          <view class="_view data-v-f853147c">{{dateType}}</view>
+        </picker>
+        <view class="_view data-v-f853147c icon"></view>
+      </view>
+      <view class="_view data-v-f853147c input-row  space-between">
+        <text class="_text data-v-f853147c title">贷款手续费</text>
+        <view class="_view data-v-f853147c rate">1%</view>
+      </view>
+    </view>
+    <view class="_view data-v-f853147c btn-row">
+      <button type="primary" disabled="{{!apply.amount}}" bindtap="handleProxy" data-eventid="{{'17x-4'}}" data-comkey="{{$k}}" class="_button data-v-f853147c">立即申请</button>
+    </view>
+  </view>
+</template>

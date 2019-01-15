@@ -1,0 +1,29 @@
+<import src="/components/uni-input.vue.wxml" />
+<import src="/components/countDown/countDown.vue.wxml" />
+<template name="06315b0c">
+  <view class="_view data-v-2106de6a content">
+    <view class="_view data-v-2106de6a reg-label">新用户注册</view>
+    <view class="_view data-v-2106de6a input-group">
+      <view class="_view data-v-2106de6a input-row">
+        <text class="_text data-v-2106de6a title">姓名：</text>
+        <template type="text" focus clearable value="{{NAME}}" bindchange="handleProxy" placeholder="请输入您的姓名" data-eventid="{{'TPZ-0'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'Haj-0'],$root}}" is="123a2178"></template>
+      </view>
+      <view class="_view data-v-2106de6a input-row">
+        <text class="_text data-v-2106de6a title">手机号：</text>
+        <template type="text" maxlength="11" clearable value="{{PHONE}}" bindchange="handleProxy" placeholder="请输入手机号码" data-eventid="{{'4Tn-1'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'E4f-1'],$root}}" is="123a2178"></template>
+      </view>
+      <view class="_view data-v-2106de6a input-row">
+        <text class="_text data-v-2106de6a title">密码：</text>
+        <template type="password" displayable value="{{PASSWORD}}" bindchange="handleProxy" placeholder="请输入密码" data-eventid="{{'UB4-2'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'TZc-2'],$root}}" is="123a2178"></template>
+      </view>
+      <view class="_view data-v-2106de6a input-row">
+        <text class="_text data-v-2106de6a title">验证码：</text>
+        <template type="text" maxlength="6" value="{{smscode}}" bindchange="handleProxy" placeholder="请输入短信验证码" data-eventid="{{'e4M-3'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'JgI-3'],$root}}" is="123a2178"></template>
+        <template ref="countDown" color="FF9833" size="30" bindcountDown="handleProxy" data-eventid="{{'pyo-4'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'8Lx-4'],$root}}" is="6ca6b3c4"></template>
+      </view>
+    </view>
+    <view class="_view data-v-2106de6a btn-row">
+      <button type="primary" class="_button data-v-2106de6a primary" disabled="{{_disabled}}" bindtap="handleProxy" data-eventid="{{'C1U-5'}}" data-comkey="{{$k}}">注册</button>
+    </view>
+  </view>
+</template>

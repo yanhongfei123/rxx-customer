@@ -1,0 +1,44 @@
+<template name="006fb173">
+  <view class="_view data-v-bccb6af8 home">
+    <view class="_view data-v-bccb6af8 tab-wrap">
+      <view bindtap="handleProxy" class="_view data-v-bccb6af8 item {{[oIndex === 0 ? 'active' : '']}}" data-eventid="{{'7I9-0'}}" data-comkey="{{$k}}">信用贷款</view>
+      <view bindtap="handleProxy" class="_view data-v-bccb6af8 item {{[oIndex === 1 ? 'active' : '']}}" data-eventid="{{'hqq-1'}}" data-comkey="{{$k}}">抵押贷款</view>
+      <view bindtap="handleProxy" class="_view data-v-bccb6af8 item {{[oIndex === 2 ? 'active' : '']}}" data-eventid="{{'MSs-2'}}" data-comkey="{{$k}}">赎楼过桥</view>
+    </view>
+    <view class="_view data-v-bccb6af8 map-content">
+      <map class="_map data-v-bccb6af8 map {{[showmap ? 'showmap' : '']}}" id="myMap" scale="{{18}}" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" show-location bindmarkertap="handleProxy" bindtap="handleProxy" bindcontroltap="handleProxy"
+        data-eventid="{{'n4L-5'}}" data-comkey="{{$k}}">
+        <cover-image bindtap="handleProxy" class="_cover-image data-v-bccb6af8 cover-img1" src="../../static/img/center.png" data-eventid="{{'S1Y-3'}}" data-comkey="{{$k}}"></cover-image>
+        <cover-image bindtap="handleProxy" class="_cover-image data-v-bccb6af8 cover-img" src="../../static/img/findjl.png" data-eventid="{{'bwU-4'}}" data-comkey="{{$k}}"></cover-image>
+      </map>
+    </view>
+    <view class="_view data-v-bccb6af8 uni-list-dk">
+      <view bindtap="handleProxy" class="_view data-v-bccb6af8 uni-list-cell" wx:key="index" key="{{index}}" data-eventid="{{'vhA-6-'+index}}" data-comkey="{{$k}}" wx:for="{{dkList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_view data-v-bccb6af8 cell-l">
+          <image mode="widthFix" src="{{item.image}}" class="_image data-v-bccb6af8 img-icon"></image>
+          <view class="_view data-v-bccb6af8 dk-wrap">
+            <view class="_view data-v-bccb6af8 top-wrap">
+              <view class="_view data-v-bccb6af8 title">{{item.NAME}}</view>
+              <view class="_view data-v-bccb6af8 des">{{item.description}}</view>
+            </view>
+            <view class="_view data-v-bccb6af8 money">{{item.account_max? (item.account_min + '万-') + (item.account_max + '万') : item.account_min + '万以上' }}</view>
+          </view>
+        </view>
+        <view class="_view data-v-bccb6af8 cell-r">
+          <view class="_view data-v-bccb6af8 apply">立即申请</view>
+          <view class="_view data-v-bccb6af8 icon-right"></view>
+        </view>
+        <view class="_view data-v-bccb6af8 line"></view>
+      </view>
+    </view>
+    <view class="_view data-v-bccb6af8 b-line"></view>
+    <view class="_view data-v-bccb6af8 btm-content">
+      <view class="_view data-v-bccb6af8 pro-title">贷款产品</view>
+      <view class="_view data-v-bccb6af8 uni-list-pro">
+        <view bindtap="handleProxy" class="_view data-v-bccb6af8 uni-list-cell {{[index % 3 == 2 ? 'r-cell' : '']}}" wx:key="index" key="{{index}}" data-eventid="{{'XT8-7-'+index}}" data-comkey="{{$k}}" wx:for="{{productList}}" wx:for-index="index" wx:for-item="item">
+          <image class="_image data-v-bccb6af8 adver" src="{{item.image}}" mode="widthFix"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

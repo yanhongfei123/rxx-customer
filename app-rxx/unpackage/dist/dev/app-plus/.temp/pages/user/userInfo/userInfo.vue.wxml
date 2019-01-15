@@ -1,0 +1,82 @@
+<import src="/components/uni-input.vue.wxml" />
+<template name="b4714b8c">
+  <view class="_view data-v-49758fc9 content">
+    <view class="_view data-v-49758fc9 reg-label"></view>
+    <view class="_view data-v-49758fc9 input-group">
+      <view class="_view data-v-49758fc9 input-row  space-between">
+        <text class="_text data-v-49758fc9 title">姓名</text>
+        <template bindinput="handleProxy" type="text" value="{{user.NAME}}" bindchange="handleProxy" placeholder="请输入姓名" data-eventid="{{'wN8-0'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'zMS-0'],$root}}" is="123a2178"></template>
+      </view>
+      <view class="_view data-v-49758fc9 input-row  space-between">
+        <text class="_text data-v-49758fc9 title">手机号码</text>
+        <template bindinput="handleProxy" type="text" value="{{user.PHONE}}" bindchange="handleProxy" placeholder="请输入手机号码" data-eventid="{{'ajN-1'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'qvv-1'],$root}}" is="123a2178"></template>
+      </view>
+      <view class="_view data-v-49758fc9 input-row  space-between">
+        <text class="_text data-v-49758fc9 title">身份证</text>
+        <template bindinput="handleProxy" type="text" value="{{user.ID_CARD_NO}}" bindchange="handleProxy" placeholder="请输入身份证号码" data-eventid="{{'BHP-2'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'vgm-2'],$root}}" is="123a2178"></template>
+      </view>
+      <view class="_view data-v-49758fc9 input-row  space-between">
+        <text class="_text data-v-49758fc9 title">密码</text>
+        <template bindinput="handleProxy" type="text" value="{{user.PASSWORD}}" bindchange="handleProxy" placeholder="请输入密码" data-eventid="{{'bNh-3'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'NVF-3'],$root}}" is="123a2178"></template>
+      </view>
+      <view class="_view data-v-49758fc9 input-row  space-between">
+        <text class="_text data-v-49758fc9 title">性别</text>
+        <picker class="_picker data-v-49758fc9 picker-item" mode="selector" range="{{sexList}}" range-key="sex" bindchange="handleProxy" data-eventid="{{'Wno-4'}}" data-comkey="{{$k}}">
+          <view class="_view data-v-49758fc9 picker-btn">{{ sexList[user.SEX].sex }}</view>
+        </picker>
+        <view class="_view data-v-49758fc9 icon-right"></view>
+      </view>
+      <view class="_view data-v-49758fc9 input-row  space-between">
+        <text class="_text data-v-49758fc9 title">年龄</text>
+        <template bindinput="handleProxy" type="text" value="{{user.AGE}}" bindchange="handleProxy" placeholder="请输入年龄" data-eventid="{{'ImF-5'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'R5Q-4'],$root}}" is="123a2178"></template>
+      </view>
+      <view class="_view data-v-49758fc9 input-row  space-between">
+        <text class="_text data-v-49758fc9 title">职业</text>
+        <template bindinput="handleProxy" type="text" value="{{user.Career}}" bindchange="handleProxy" placeholder="请输入职业" data-eventid="{{'dUf-6'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'57O-5'],$root}}" is="123a2178"></template>
+      </view>
+      <view class="_view data-v-49758fc9 input-row  space-between">
+        <text class="_text data-v-49758fc9 title">联系地址</text>
+        <template bindinput="handleProxy" type="text" value="{{user.address}}" bindchange="handleProxy" placeholder="请输入联系地址" data-eventid="{{'vTr-7'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'Pce-6'],$root}}" is="123a2178"></template>
+      </view>
+      <view class="_view data-v-49758fc9 input-row  space-between">
+        <text class="_text data-v-49758fc9 title">户籍</text>
+        <template bindinput="handleProxy" type="text" value="{{user.census}}" bindchange="handleProxy" placeholder="请输入户籍" data-eventid="{{'5W7-8'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'zE4-7'],$root}}" is="123a2178"></template>
+      </view>
+      <view class="_view data-v-49758fc9 input-row  space-between">
+        <text class="_text data-v-49758fc9 title">社保</text>
+        <template bindinput="handleProxy" type="text" value="{{user.Social_security}}" bindchange="handleProxy" placeholder="请输入社保" data-eventid="{{'dXI-9'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'QYm-8'],$root}}" is="123a2178"></template>
+      </view>
+      <view class="_view data-v-49758fc9 input-row  space-between">
+        <text class="_text data-v-49758fc9 title">婚姻状况</text>
+        <template bindinput="handleProxy" type="text" value="{{user.hunyin}}" bindchange="handleProxy" placeholder="请输入婚姻状况" data-eventid="{{'ekv-10'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'PI4-9'],$root}}" is="123a2178"></template>
+      </view>
+      <view class="_view data-v-49758fc9 input-row  space-between">
+        <text class="_text data-v-49758fc9 title">房产信息</text>
+        <template bindinput="handleProxy" type="text" value="{{user.Property}}" bindchange="handleProxy" placeholder="请输入房产信息" data-eventid="{{'rqh-11'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'sMt-10'],$root}}" is="123a2178"></template>
+      </view>
+      <view class="_view data-v-49758fc9 input-row  space-between">
+        <text class="_text data-v-49758fc9 title">车辆信息</text>
+        <template bindinput="handleProxy" type="text" value="{{user.car}}" bindchange="handleProxy" placeholder="请输入车辆信息" data-eventid="{{'C5l-12'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'zrq-11'],$root}}" is="123a2178"></template>
+      </view>
+      <view class="_view data-v-49758fc9 input-row  space-between">
+        <text class="_text data-v-49758fc9 title">征信信息</text>
+        <template bindinput="handleProxy" type="text" value="{{user.Credit}}" bindchange="handleProxy" placeholder="请输入征信信息" data-eventid="{{'tuV-13'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'3ar-12'],$root}}" is="123a2178"></template>
+      </view>
+      <view class="_view data-v-49758fc9 input-row  space-between">
+        <text class="_text data-v-49758fc9 title">银行流水</text>
+        <template bindinput="handleProxy" type="text" value="{{user.bank_flow}}" bindchange="handleProxy" placeholder="请输入银行流水" data-eventid="{{'6dR-14'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'Wri-13'],$root}}" is="123a2178"></template>
+      </view>
+      <view class="_view data-v-49758fc9 input-row  space-between">
+        <text class="_text data-v-49758fc9 title">有无负债</text>
+        <template bindinput="handleProxy" type="text" value="{{user.owing}}" bindchange="handleProxy" placeholder="请输入有无负债" data-eventid="{{'04Q-15'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'hnr-14'],$root}}" is="123a2178"></template>
+      </view>
+      <view class="_view data-v-49758fc9 input-row  space-between">
+        <text class="_text data-v-49758fc9 title">月收入</text>
+        <template bindinput="handleProxy" type="text" value="{{user.income}}" bindchange="handleProxy" placeholder="请输入月收入" data-eventid="{{'rQr-16'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'Epc-15'],$root}}" is="123a2178"></template>
+      </view>
+    </view>
+    <view class="_view data-v-49758fc9 btn-row">
+      <button type="primary" bindtap="handleProxy" data-eventid="{{'PqD-17'}}" data-comkey="{{$k}}" class="_button data-v-49758fc9">保存</button>
+    </view>
+  </view>
+</template>

@@ -1,11 +1,11 @@
-<template name="c677ec9a">
-  <view class="_view data-v-3deea2c4 content">
-    <view class="_view data-v-3deea2c4 hello">
-      <view class="_view data-v-3deea2c4 ul">
-        <view class="_view data-v-3deea2c4">这是 uni-app 带登录模板的示例App首页。</view>
-        <view class="_view data-v-3deea2c4">在 “我的” 中点击 “退出” 可以 “注销当前账户”</view>
+<template name="2dfd0bd0">
+  <view class="_view data-v-58c84042 content">
+    <view class="_view data-v-58c84042 hello">
+      <view class="_view data-v-58c84042 ul">
+        <view class="_view data-v-58c84042">这是 uni-app 带登录模板的示例App首页。</view>
+        <view class="_view data-v-58c84042">在 “我的” 中点击 “退出” 可以 “注销当前账户”</view>
       </view>
     </view>
-    <view bindtap="handleProxy" data-eventid="{{'Pmk-0'}}" data-comkey="{{$k}}" class="_view data-v-3deea2c4">退出登录</view>
+    <view bindtap="handleProxy" data-eventid="{{'cbp-0'}}" data-comkey="{{$k}}" class="_view data-v-58c84042">退出登录</view>
   </view>
 </template>

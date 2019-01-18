@@ -1,3 +1,5 @@
-<template name="f100d276">
-  <rich-text class="_view data-v-75fedf54 content" nodes="{{content}}"></rich-text>
+<template name="080bae0c">
+  <view class="_view data-v-63dab56a content">
+    <web-view webview-styles="{{webviewStyles}}" src="http://api.rongxiaoxiao.com/about_client" class="_web-view data-v-63dab56a"></web-view>
+  </view>
 </template>

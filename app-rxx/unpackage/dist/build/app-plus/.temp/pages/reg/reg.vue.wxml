@@ -1,28 +1,28 @@
 <import src="/components/countDown/countDown.vue.wxml" />
-<template name="bd3fc67c">
-  <view class="_view data-v-5b15917e content">
-    <view class="_view data-v-5b15917e reg-label">新用户注册</view>
-    <view class="_view data-v-5b15917e input-group">
-      <view class="_view data-v-5b15917e input-row">
-        <text class="_text data-v-5b15917e title">姓名：</text>
-        <input type="text" focus value="{{NAME}}" bindinput="handleProxy" placeholder-class="placeholder" placeholder="请输入您的姓名" data-eventid="{{'ReM-0'}}" data-comkey="{{$k}}" class="_input data-v-5b15917e" />
+<template name="731a455a">
+  <view class="_view data-v-59a65dae content">
+    <view class="_view data-v-59a65dae reg-label">新用户注册</view>
+    <view class="_view data-v-59a65dae input-group">
+      <view class="_view data-v-59a65dae input-row">
+        <text class="_text data-v-59a65dae title">姓名：</text>
+        <input type="text" focus value="{{NAME}}" bindinput="handleProxy" placeholder-class="placeholder" placeholder="请输入您的姓名" data-eventid="{{'7YQ-0'}}" data-comkey="{{$k}}" class="_input data-v-59a65dae" />
       </view>
-      <view class="_view data-v-5b15917e input-row">
-        <text class="_text data-v-5b15917e title">手机号：</text>
-        <input type="text" maxlength="11" placeholder-class="placeholder" value="{{PHONE}}" bindinput="handleProxy" placeholder="请输入手机号码" data-eventid="{{'Edc-1'}}" data-comkey="{{$k}}" class="_input data-v-5b15917e" />
+      <view class="_view data-v-59a65dae input-row">
+        <text class="_text data-v-59a65dae title">手机号：</text>
+        <input type="text" maxlength="11" placeholder-class="placeholder" value="{{PHONE}}" bindinput="handleProxy" placeholder="请输入手机号码" data-eventid="{{'79g-1'}}" data-comkey="{{$k}}" class="_input data-v-59a65dae" />
       </view>
-      <view class="_view data-v-5b15917e input-row">
-        <text class="_text data-v-5b15917e title">密码：</text>
-        <input type="password" placeholder-class="placeholder" value="{{PASSWORD}}" bindinput="handleProxy" placeholder="请输入密码" data-eventid="{{'0yJ-2'}}" data-comkey="{{$k}}" class="_input data-v-5b15917e" />
+      <view class="_view data-v-59a65dae input-row">
+        <text class="_text data-v-59a65dae title">密码：</text>
+        <input type="password" placeholder-class="placeholder" value="{{PASSWORD}}" bindinput="handleProxy" placeholder="请输入密码" data-eventid="{{'ixv-2'}}" data-comkey="{{$k}}" class="_input data-v-59a65dae" />
       </view>
-      <view class="_view data-v-5b15917e input-row">
-        <text class="_text data-v-5b15917e title">验证码：</text>
-        <input type="text" placeholder-class="placeholder" maxlength="6" value="{{smscode}}" bindinput="handleProxy" placeholder="请输入短信验证码" data-eventid="{{'Hul-3'}}" data-comkey="{{$k}}" class="_input data-v-5b15917e" />
-        <template ref="countDown" color="FF9833" size="30" bindcountDown="handleProxy" data-eventid="{{'eEi-4'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'OSo-0'],$root}}" is="eb3ae1bc"></template>
+      <view class="_view data-v-59a65dae input-row">
+        <text class="_text data-v-59a65dae title">验证码：</text>
+        <input type="text" placeholder-class="placeholder" maxlength="6" value="{{smscode}}" bindinput="handleProxy" placeholder="请输入短信验证码" data-eventid="{{'oyP-3'}}" data-comkey="{{$k}}" class="_input data-v-59a65dae" />
+        <template ref="countDown" color="FF9833" size="30" bindcountDown="handleProxy" data-eventid="{{'ONt-4'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'Qob-0'],$root}}" is="2521cf3e"></template>
       </view>
     </view>
-    <view class="_view data-v-5b15917e btn-row">
-      <button type="primary" class="_button data-v-5b15917e primary" disabled="{{_disabled}}" bindtap="handleProxy" data-eventid="{{'PCk-5'}}" data-comkey="{{$k}}">注册</button>
+    <view class="_view data-v-59a65dae btn-row">
+      <button type="primary" class="_button data-v-59a65dae primary" disabled="{{_disabled}}" bindtap="handleProxy" data-eventid="{{'Ied-5'}}" data-comkey="{{$k}}">注册</button>
     </view>
   </view>
 </template>

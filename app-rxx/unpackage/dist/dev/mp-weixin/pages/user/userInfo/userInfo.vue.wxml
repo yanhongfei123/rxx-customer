@@ -1,82 +1,82 @@
 <import src="/components/uni-input.vue.wxml" />
-<template name="9ebb49f8">
-  <view class="_view data-v-63eaa0e6 content">
-    <view class="_view data-v-63eaa0e6 reg-label"></view>
-    <view class="_view data-v-63eaa0e6 input-group">
-      <view class="_view data-v-63eaa0e6 input-row  space-between">
-        <text class="_text data-v-63eaa0e6 title">姓名</text>
-        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.NAME}}" placeholder="请输入姓名" data-eventid="{{'yTv-0'}}" data-comkey="{{$k}}" class="_input data-v-63eaa0e6" />
+<template name="08b44b5a">
+  <view class="_view data-v-4a6670aa content">
+    <view class="_view data-v-4a6670aa reg-label"></view>
+    <view class="_view data-v-4a6670aa input-group">
+      <view class="_view data-v-4a6670aa input-row  space-between">
+        <text class="_text data-v-4a6670aa title">姓名</text>
+        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.NAME}}" placeholder="请输入姓名" data-eventid="{{'9rZ-0'}}" data-comkey="{{$k}}" class="_input data-v-4a6670aa" />
       </view>
-      <view class="_view data-v-63eaa0e6 input-row  space-between">
-        <text class="_text data-v-63eaa0e6 title">手机号码</text>
-        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.PHONE}}" placeholder="请输入手机号码" data-eventid="{{'i2y-1'}}" data-comkey="{{$k}}" class="_input data-v-63eaa0e6" />
+      <view class="_view data-v-4a6670aa input-row  space-between">
+        <text class="_text data-v-4a6670aa title">手机号码</text>
+        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.PHONE}}" placeholder="请输入手机号码" data-eventid="{{'cEV-1'}}" data-comkey="{{$k}}" class="_input data-v-4a6670aa" />
       </view>
-      <view class="_view data-v-63eaa0e6 input-row  space-between">
-        <text class="_text data-v-63eaa0e6 title">身份证</text>
-        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.ID_CARD_NO}}" placeholder="请输入身份证号码" data-eventid="{{'74r-2'}}" data-comkey="{{$k}}" class="_input data-v-63eaa0e6" />
+      <view class="_view data-v-4a6670aa input-row  space-between">
+        <text class="_text data-v-4a6670aa title">身份证</text>
+        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.ID_CARD_NO}}" placeholder="请输入身份证号码" data-eventid="{{'CIw-2'}}" data-comkey="{{$k}}" class="_input data-v-4a6670aa" />
       </view>
-      <view hidden="{{!(!user.PHONE)}}" class="_view data-v-63eaa0e6 input-row  space-between">
-        <text class="_text data-v-63eaa0e6 title">密码</text>
-        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.PASSWORD}}" placeholder="请输入密码" data-eventid="{{'F73-3'}}" data-comkey="{{$k}}" class="_input data-v-63eaa0e6" />
+      <view hidden="{{!(!user.PHONE)}}" class="_view data-v-4a6670aa input-row  space-between">
+        <text class="_text data-v-4a6670aa title">密码</text>
+        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.PASSWORD}}" placeholder="请输入密码" data-eventid="{{'iyC-3'}}" data-comkey="{{$k}}" class="_input data-v-4a6670aa" />
       </view>
-      <view class="_view data-v-63eaa0e6 input-row  space-between">
-        <text class="_text data-v-63eaa0e6 title">性别</text>
-        <picker class="_picker data-v-63eaa0e6 picker-item" mode="selector" range="{{sexList}}" range-key="sex" bindchange="handleProxy" data-eventid="{{'qHU-4'}}" data-comkey="{{$k}}">
-          <view class="_view data-v-63eaa0e6 picker-btn">{{ sexList[user.SEX].sex }}</view>
+      <view class="_view data-v-4a6670aa input-row  space-between">
+        <text class="_text data-v-4a6670aa title">性别</text>
+        <picker class="_picker data-v-4a6670aa picker-item" mode="selector" range="{{sexList}}" range-key="sex" bindchange="handleProxy" data-eventid="{{'TdB-4'}}" data-comkey="{{$k}}">
+          <view class="_view data-v-4a6670aa picker-btn">{{ sexList[user.SEX].sex }}</view>
         </picker>
-        <view class="_view data-v-63eaa0e6 icon-right"></view>
+        <view class="_view data-v-4a6670aa icon-right"></view>
       </view>
-      <view class="_view data-v-63eaa0e6 input-row  space-between">
-        <text class="_text data-v-63eaa0e6 title">年龄</text>
-        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.AGE}}" placeholder="请输入年龄" data-eventid="{{'RA7-5'}}" data-comkey="{{$k}}" class="_input data-v-63eaa0e6" />
+      <view class="_view data-v-4a6670aa input-row  space-between">
+        <text class="_text data-v-4a6670aa title">年龄</text>
+        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.AGE}}" placeholder="请输入年龄" data-eventid="{{'Jwt-5'}}" data-comkey="{{$k}}" class="_input data-v-4a6670aa" />
       </view>
-      <view class="_view data-v-63eaa0e6 input-row  space-between">
-        <text class="_text data-v-63eaa0e6 title">职业</text>
-        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.Career}}" placeholder="请输入职业" data-eventid="{{'Sn2-6'}}" data-comkey="{{$k}}" class="_input data-v-63eaa0e6" />
+      <view class="_view data-v-4a6670aa input-row  space-between">
+        <text class="_text data-v-4a6670aa title">职业</text>
+        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.Career}}" placeholder="请输入职业" data-eventid="{{'f0I-6'}}" data-comkey="{{$k}}" class="_input data-v-4a6670aa" />
       </view>
-      <view class="_view data-v-63eaa0e6 input-row  space-between">
-        <text class="_text data-v-63eaa0e6 title">联系地址</text>
-        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.address}}" placeholder="请输入联系地址" data-eventid="{{'cLr-7'}}" data-comkey="{{$k}}" class="_input data-v-63eaa0e6" />
+      <view class="_view data-v-4a6670aa input-row  space-between">
+        <text class="_text data-v-4a6670aa title">联系地址</text>
+        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.address}}" placeholder="请输入联系地址" data-eventid="{{'lvq-7'}}" data-comkey="{{$k}}" class="_input data-v-4a6670aa" />
       </view>
-      <view class="_view data-v-63eaa0e6 input-row  space-between">
-        <text class="_text data-v-63eaa0e6 title">户籍</text>
-        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.census}}" placeholder="请输入户籍" data-eventid="{{'UN6-8'}}" data-comkey="{{$k}}" class="_input data-v-63eaa0e6" />
+      <view class="_view data-v-4a6670aa input-row  space-between">
+        <text class="_text data-v-4a6670aa title">户籍</text>
+        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.census}}" placeholder="请输入户籍" data-eventid="{{'WZI-8'}}" data-comkey="{{$k}}" class="_input data-v-4a6670aa" />
       </view>
-      <view class="_view data-v-63eaa0e6 input-row  space-between">
-        <text class="_text data-v-63eaa0e6 title">社保</text>
-        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.Social_security}}" placeholder="请输入社保" data-eventid="{{'BKv-9'}}" data-comkey="{{$k}}" class="_input data-v-63eaa0e6" />
+      <view class="_view data-v-4a6670aa input-row  space-between">
+        <text class="_text data-v-4a6670aa title">社保</text>
+        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.Social_security}}" placeholder="请输入社保" data-eventid="{{'4gn-9'}}" data-comkey="{{$k}}" class="_input data-v-4a6670aa" />
       </view>
-      <view class="_view data-v-63eaa0e6 input-row  space-between">
-        <text class="_text data-v-63eaa0e6 title">婚姻状况</text>
-        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.hunyin}}" placeholder="请输入婚姻状况" data-eventid="{{'liZ-10'}}" data-comkey="{{$k}}" class="_input data-v-63eaa0e6" />
+      <view class="_view data-v-4a6670aa input-row  space-between">
+        <text class="_text data-v-4a6670aa title">婚姻状况</text>
+        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.hunyin}}" placeholder="请输入婚姻状况" data-eventid="{{'w6g-10'}}" data-comkey="{{$k}}" class="_input data-v-4a6670aa" />
       </view>
-      <view class="_view data-v-63eaa0e6 input-row  space-between">
-        <text class="_text data-v-63eaa0e6 title">房产信息</text>
-        <template bindinput="handleProxy" type="text" value="{{user.Property}}" bindchange="handleProxy" placeholder="请输入房产信息" data-eventid="{{'lnj-11'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'115-0'],$root}}" is="54b23ba8"></template>
+      <view class="_view data-v-4a6670aa input-row  space-between">
+        <text class="_text data-v-4a6670aa title">房产信息</text>
+        <template bindinput="handleProxy" type="text" value="{{user.Property}}" bindchange="handleProxy" placeholder="请输入房产信息" data-eventid="{{'dnc-11'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'vNq-0'],$root}}" is="613a3298"></template>
       </view>
-      <view class="_view data-v-63eaa0e6 input-row  space-between">
-        <text class="_text data-v-63eaa0e6 title">车辆信息</text>
-        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.car}}" placeholder="请输入车辆信息" data-eventid="{{'Pc4-12'}}" data-comkey="{{$k}}" class="_input data-v-63eaa0e6" />
+      <view class="_view data-v-4a6670aa input-row  space-between">
+        <text class="_text data-v-4a6670aa title">车辆信息</text>
+        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.car}}" placeholder="请输入车辆信息" data-eventid="{{'f3l-12'}}" data-comkey="{{$k}}" class="_input data-v-4a6670aa" />
       </view>
-      <view class="_view data-v-63eaa0e6 input-row  space-between">
-        <text class="_text data-v-63eaa0e6 title">征信信息</text>
-        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.Credit}}" placeholder="请输入征信信息" data-eventid="{{'Mrf-13'}}" data-comkey="{{$k}}" class="_input data-v-63eaa0e6" />
+      <view class="_view data-v-4a6670aa input-row  space-between">
+        <text class="_text data-v-4a6670aa title">征信信息</text>
+        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.Credit}}" placeholder="请输入征信信息" data-eventid="{{'59g-13'}}" data-comkey="{{$k}}" class="_input data-v-4a6670aa" />
       </view>
-      <view class="_view data-v-63eaa0e6 input-row  space-between">
-        <text class="_text data-v-63eaa0e6 title">银行流水</text>
-        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.bank_flow}}" placeholder="请输入银行流水" data-eventid="{{'Dn7-14'}}" data-comkey="{{$k}}" class="_input data-v-63eaa0e6" />
+      <view class="_view data-v-4a6670aa input-row  space-between">
+        <text class="_text data-v-4a6670aa title">银行流水</text>
+        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.bank_flow}}" placeholder="请输入银行流水" data-eventid="{{'sOe-14'}}" data-comkey="{{$k}}" class="_input data-v-4a6670aa" />
       </view>
-      <view class="_view data-v-63eaa0e6 input-row  space-between">
-        <text class="_text data-v-63eaa0e6 title">有无负债</text>
-        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.owing}}" placeholder="请输入有无负债" data-eventid="{{'wZ2-15'}}" data-comkey="{{$k}}" class="_input data-v-63eaa0e6" />
+      <view class="_view data-v-4a6670aa input-row  space-between">
+        <text class="_text data-v-4a6670aa title">有无负债</text>
+        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.owing}}" placeholder="请输入有无负债" data-eventid="{{'E82-15'}}" data-comkey="{{$k}}" class="_input data-v-4a6670aa" />
       </view>
-      <view class="_view data-v-63eaa0e6 input-row  space-between">
-        <text class="_text data-v-63eaa0e6 title">月收入</text>
-        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.income}}" placeholder="请输入月收入" data-eventid="{{'TuS-16'}}" data-comkey="{{$k}}" class="_input data-v-63eaa0e6" />
+      <view class="_view data-v-4a6670aa input-row  space-between">
+        <text class="_text data-v-4a6670aa title">月收入</text>
+        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{user.income}}" placeholder="请输入月收入" data-eventid="{{'6bU-16'}}" data-comkey="{{$k}}" class="_input data-v-4a6670aa" />
       </view>
     </view>
-    <view class="_view data-v-63eaa0e6 btn-row">
-      <button type="primary" bindtap="handleProxy" data-eventid="{{'naQ-17'}}" data-comkey="{{$k}}" class="_button data-v-63eaa0e6">保存</button>
+    <view class="_view data-v-4a6670aa btn-row">
+      <button type="primary" bindtap="handleProxy" data-eventid="{{'CS0-17'}}" data-comkey="{{$k}}" class="_button data-v-4a6670aa">保存</button>
     </view>
   </view>
 </template>

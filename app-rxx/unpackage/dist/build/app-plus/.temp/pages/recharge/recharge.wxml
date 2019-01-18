@@ -1,1 +1,1 @@
-<import src="/pages/recharge/recharge.vue.wxml" /><template is="337b839c" data="{{ ...$root['0'], $root }}"/>
+<import src="/pages/recharge/recharge.vue.wxml" /><template is="1bd12390" data="{{ ...$root['0'], $root }}"/>

@@ -1,31 +1,31 @@
-<template name="4fbf56f3">
-  <view class="_view data-v-4c813104 content">
-    <view class="_view data-v-4c813104 con-wrap">
-      <view class="_view data-v-4c813104 capital-title">信用贷款</view>
-      <view class="_view data-v-4c813104 cell-mid">
-        <view class="_view data-v-4c813104">
-          <view class="_view data-v-4c813104 amount">5万元</view>
-          <view class="_view data-v-4c813104 des">贷款金额</view>
+<template name="56d7fbe0">
+  <view class="_view data-v-38024fc2 content">
+    <view class="_view data-v-38024fc2 con-wrap">
+      <view class="_view data-v-38024fc2 capital-title">信用贷款</view>
+      <view class="_view data-v-38024fc2 cell-mid">
+        <view class="_view data-v-38024fc2">
+          <view class="_view data-v-38024fc2 amount">5万元</view>
+          <view class="_view data-v-38024fc2 des">贷款金额</view>
         </view>
-        <view class="_view data-v-4c813104 mar110">
-          <view class="_view data-v-4c813104 date">3个月</view>
-          <view class="_view data-v-4c813104 des">贷款期限</view>
+        <view class="_view data-v-38024fc2 mar110">
+          <view class="_view data-v-38024fc2 date">3个月</view>
+          <view class="_view data-v-38024fc2 des">贷款期限</view>
         </view>
-        <view class="_view data-v-4c813104">
-          <view class="_view data-v-4c813104 time">18:30:04</view>
-          <view class="_view data-v-4c813104 des">发布时间</view>
+        <view class="_view data-v-38024fc2">
+          <view class="_view data-v-38024fc2 time">18:30:04</view>
+          <view class="_view data-v-38024fc2 des">发布时间</view>
         </view>
       </view>
-      <view class="_view data-v-4c813104 cell-btm">
-        <view class="_view data-v-4c813104 info-title">基本信息</view>
-        <view class="_view data-v-4c813104 user-info">
-          <view class="_view data-v-4c813104">姓名: 周小姐</view>
-          <view class="_view data-v-4c813104">年龄: 28</view>
-          <view class="_view data-v-4c813104">月收入: 15000</view>
-          <view class="_view data-v-4c813104">信用情况: 少于3次预期</view>
+      <view class="_view data-v-38024fc2 cell-btm">
+        <view class="_view data-v-38024fc2 info-title">基本信息</view>
+        <view class="_view data-v-38024fc2 user-info">
+          <view class="_view data-v-38024fc2">姓名: 周小姐</view>
+          <view class="_view data-v-38024fc2">年龄: 28</view>
+          <view class="_view data-v-38024fc2">月收入: 15000</view>
+          <view class="_view data-v-38024fc2">信用情况: 少于3次预期</view>
         </view>
       </view>
     </view>
-    <view class="_view data-v-4c813104 tips">提示：此信息由客户自信提交，请自行审核判断真伪</view>
+    <view class="_view data-v-38024fc2 tips">提示：此信息由客户自信提交，请自行审核判断真伪</view>
   </view>
 </template>

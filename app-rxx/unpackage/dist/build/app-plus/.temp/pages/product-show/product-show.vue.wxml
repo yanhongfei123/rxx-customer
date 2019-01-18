@@ -1,7 +1,7 @@
-<template name="2b1a4a32">
-  <view class="_view data-v-24521e34 content">
-    <view class="_view data-v-24521e34 no-data" hidden="{{!(!content)}}">暂无数据</view>
-    <image src="{{content}}" mode="widthFix" class="_image data-v-24521e34"></image>
-    <button bindtap="handleProxy" type="primary" data-eventid="{{'qzF-0'}}" data-comkey="{{$k}}" class="_button data-v-24521e34">立即申请</button>
+<template name="b7c7d9e0">
+  <view class="_view data-v-98f22dc2 content">
+    <view class="_view data-v-98f22dc2 no-data" hidden="{{!(!content)}}">暂无数据</view>
+    <image src="{{content}}" mode="widthFix" class="_image data-v-98f22dc2"></image>
+    <button bindtap="handleProxy" type="primary" data-eventid="{{'Ieb-0'}}" data-comkey="{{$k}}" class="_button data-v-98f22dc2">立即申请</button>
   </view>
 </template>

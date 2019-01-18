@@ -1,36 +1,36 @@
-<template name="c04d0014">
-  <view class="_view data-v-4d5f65f2 content">
-    <view class="_view data-v-4d5f65f2 reg-label"></view>
-    <view class="_view data-v-4d5f65f2 input-group">
-      <view class="_view data-v-4d5f65f2 input-row  space-between">
-        <text class="_text data-v-4d5f65f2 title">贷款产品</text>
-        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{name}}" placeholder="请输入贷款产品" data-eventid="{{'cG4-0'}}" data-comkey="{{$k}}" class="_input data-v-4d5f65f2" />
+<template name="ac226864">
+  <view class="_view data-v-6328d81d content">
+    <view class="_view data-v-6328d81d reg-label"></view>
+    <view class="_view data-v-6328d81d input-group">
+      <view class="_view data-v-6328d81d input-row  space-between">
+        <text class="_text data-v-6328d81d title">贷款产品</text>
+        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{name}}" placeholder="请输入贷款产品" data-eventid="{{'3MK-0'}}" data-comkey="{{$k}}" class="_input data-v-6328d81d" />
       </view>
-      <view class="_view data-v-4d5f65f2 input-row  space-between">
-        <text class="_text data-v-4d5f65f2 title">贷款额度</text>
-        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{apply.amount}}" placeholder="请输入贷款额度" data-eventid="{{'QO4-1'}}" data-comkey="{{$k}}" class="_input data-v-4d5f65f2" />
+      <view class="_view data-v-6328d81d input-row  space-between">
+        <text class="_text data-v-6328d81d title">贷款额度</text>
+        <input bindinput="handleProxy" type="text" placeholder-class="placeholder" value="{{apply.amount}}" placeholder="请输入贷款额度" data-eventid="{{'XGo-1'}}" data-comkey="{{$k}}" class="_input data-v-6328d81d" />
       </view>
-      <view class="_view data-v-4d5f65f2 input-row  space-between">
-        <text class="_text data-v-4d5f65f2 title">贷款类型</text>
-        <picker class="_picker data-v-4d5f65f2 picker-item" mode="selector" range="{{productList}}" range-key="name" bindchange="handleProxy" data-eventid="{{'R0s-2'}}" data-comkey="{{$k}}">
-          <view class="_view data-v-4d5f65f2">{{proType}}</view>
+      <view class="_view data-v-6328d81d input-row  space-between">
+        <text class="_text data-v-6328d81d title">贷款类型</text>
+        <picker class="_picker data-v-6328d81d picker-item" mode="selector" range="{{productList}}" range-key="name" bindchange="handleProxy" data-eventid="{{'Mzt-2'}}" data-comkey="{{$k}}">
+          <view class="_view data-v-6328d81d">{{proType}}</view>
         </picker>
-        <view class="_view data-v-4d5f65f2 icon"></view>
+        <view class="_view data-v-6328d81d icon"></view>
       </view>
-      <view class="_view data-v-4d5f65f2 input-row  space-between">
-        <text class="_text data-v-4d5f65f2 title">贷款周期</text>
-        <picker class="_picker data-v-4d5f65f2 picker-item" mode="selector" range="{{productDate}}" range-key="name" bindchange="handleProxy" data-eventid="{{'qHA-3'}}" data-comkey="{{$k}}">
-          <view class="_view data-v-4d5f65f2">{{dateType}}</view>
+      <view class="_view data-v-6328d81d input-row  space-between">
+        <text class="_text data-v-6328d81d title">贷款周期</text>
+        <picker class="_picker data-v-6328d81d picker-item" mode="selector" range="{{productDate}}" range-key="name" bindchange="handleProxy" data-eventid="{{'iFE-3'}}" data-comkey="{{$k}}">
+          <view class="_view data-v-6328d81d">{{dateType}}</view>
         </picker>
-        <view class="_view data-v-4d5f65f2 icon"></view>
+        <view class="_view data-v-6328d81d icon"></view>
       </view>
-      <view class="_view data-v-4d5f65f2 input-row  space-between">
-        <text class="_text data-v-4d5f65f2 title">贷款手续费</text>
-        <view class="_view data-v-4d5f65f2 rate">1%</view>
+      <view class="_view data-v-6328d81d input-row  space-between">
+        <text class="_text data-v-6328d81d title">贷款手续费</text>
+        <view class="_view data-v-6328d81d rate">1%</view>
       </view>
     </view>
-    <view class="_view data-v-4d5f65f2 btn-row">
-      <button type="primary" disabled="{{!apply.amount}}" bindtap="handleProxy" data-eventid="{{'uHv-4'}}" data-comkey="{{$k}}" class="_button data-v-4d5f65f2">立即申请</button>
+    <view class="_view data-v-6328d81d btn-row">
+      <button type="primary" disabled="{{!apply.amount}}" bindtap="handleProxy" data-eventid="{{'Js6-4'}}" data-comkey="{{$k}}" class="_button data-v-6328d81d">立即申请</button>
     </view>
   </view>
 </template>

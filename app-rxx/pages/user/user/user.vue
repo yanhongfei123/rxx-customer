@@ -19,7 +19,7 @@
 			<view @tap="showMask(true)" class="uni-list-cell">
 				<image style="width: 36px;height: 36px;" class="icon" mode="widthFix" src="/static/img/friend.png" />
 				<view class="input-row  space-between">
-					<text class="title">好友</text>
+					<text class="title">分享</text>
 					<view class="icon-right"></view>
 				</view>
 			</view>
@@ -30,7 +30,7 @@
 			<view class="uni-list-cell">
 				<image style="width: 36px;height: 36px;" class="icon" mode="widthFix" src="/static/img/friend.png" />
 				<view class="input-row  space-between">
-					<text class="title">好友</text>
+					<text class="title">分享</text>
 					<view class="icon-right"></view>
 					<button class="share-btn" open-type="share"></button>
 				</view>
@@ -106,10 +106,10 @@
 				shareParams: {
 					provider: "weixin",
 					type: 0,
-					href: "https://www.baidu.com/",
+					href: "http://api.rongxiaoxiao.com/about_client",
 					title: "融小小分享",
 					summary: "融小小分享内容",
-					imageUrl: "/static/img/app-logo.png",
+					imageUrl: "https://m-fat.wolaidai.com/web-static/webapp/auto/img/home_banner_new_user.png",
 				},
 				isShowMask: false,
 				logoSrc: '../../../static/img/logo.png' // /static/img/info.png  

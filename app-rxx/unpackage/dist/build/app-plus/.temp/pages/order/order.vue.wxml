@@ -1,17 +1,17 @@
-<template name="3bb53fb6">
-  <view class="_view data-v-2d89b49c content">
-    <view class="_view data-v-2d89b49c uni-list">
-      <view hidden="{{!(!orderList.length)}}" class="_view data-v-2d89b49c no-data">暂无数据</view>
-      <view class="_view data-v-2d89b49c uni-list-cell" wx:key="index" key="{{index}}" wx:for="{{orderList}}" wx:for-index="index" wx:for-item="item">
-        <view class="_view data-v-2d89b49c order-number">订单编号: {{item.order_num}} </view>
-        <view class="_view data-v-2d89b49c cell-mid">
-          <view class="_view data-v-2d89b49c manager h-70">贷款经理: {{item.CUSTOMER.user.NAME}} </view>
-          <view class="_view data-v-2d89b49c apply-money h-70">贷款额度: {{item.amount}} </view>
-          <view class="_view data-v-2d89b49c apply-name h-70">产品名称: {{item.pruductname}} </view>
-          <view class="_view data-v-2d89b49c apply-type h-70">贷款类型: {{item.typename}} </view>
-          <view class="_view data-v-2d89b49c state {{[[item.STATUS === 2 ? 'light' : '']]}}">{{state[item.STATUS - 1]}}</view>
+<template name="45ca8b8e">
+  <view class="_view data-v-01f6d046 content">
+    <view class="_view data-v-01f6d046 uni-list">
+      <view hidden="{{!(!orderList.length)}}" class="_view data-v-01f6d046 no-data">暂无数据</view>
+      <view class="_view data-v-01f6d046 uni-list-cell" wx:key="index" key="{{index}}" wx:for="{{orderList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_view data-v-01f6d046 order-number">订单编号: {{item.order_num}} </view>
+        <view class="_view data-v-01f6d046 cell-mid">
+          <view class="_view data-v-01f6d046 manager h-70">贷款经理: {{item.CUSTOMER.user.NAME}} </view>
+          <view class="_view data-v-01f6d046 apply-money h-70">贷款额度: {{item.amount}} </view>
+          <view class="_view data-v-01f6d046 apply-name h-70">产品名称: {{item.pruductname}} </view>
+          <view class="_view data-v-01f6d046 apply-type h-70">贷款类型: {{item.typename}} </view>
+          <view class="_view data-v-01f6d046 state {{[[item.STATUS === 2 ? 'light' : '']]}}">{{state[item.STATUS - 1]}}</view>
         </view>
-        <view class="_view data-v-2d89b49c go-detail" bindtap="handleProxy" data-eventid="{{'WXl-0-'+index}}" data-comkey="{{$k}}">查看详细</view>
+        <view class="_view data-v-01f6d046 go-detail" bindtap="handleProxy" data-eventid="{{'brP-0-'+index}}" data-comkey="{{$k}}">查看详细</view>
       </view>
     </view>
   </view>

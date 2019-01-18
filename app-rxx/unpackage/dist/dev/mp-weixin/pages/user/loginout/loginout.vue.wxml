@@ -1,16 +1,16 @@
-<template name="1430e6f8">
-  <view class="_view data-v-ada05b34 content">
-    <view class="_view data-v-ada05b34 reg-label"></view>
-    <view class="_view data-v-ada05b34 input-group">
-      <navigator url="../../pwd/pwd" class="_navigator data-v-ada05b34">
-        <view class="_view data-v-ada05b34 input-row space-between">
-          <text class="_text data-v-ada05b34 title">修改密码</text>
-          <view class="_view data-v-ada05b34 icon-right"></view>
+<template name="4df97cda">
+  <view class="_view data-v-2011f92b content">
+    <view class="_view data-v-2011f92b reg-label"></view>
+    <view class="_view data-v-2011f92b input-group">
+      <navigator url="../../pwd/pwd" class="_navigator data-v-2011f92b">
+        <view class="_view data-v-2011f92b input-row space-between">
+          <text class="_text data-v-2011f92b title">修改密码</text>
+          <view class="_view data-v-2011f92b icon-right"></view>
         </view>
       </navigator>
     </view>
-    <view class="_view data-v-ada05b34 btn-row">
-      <button type="primary" bindtap="handleProxy" data-eventid="{{'ALk-0'}}" data-comkey="{{$k}}" class="_button data-v-ada05b34">退出登录</button>
+    <view class="_view data-v-2011f92b btn-row">
+      <button type="primary" bindtap="handleProxy" data-eventid="{{'fWs-0'}}" data-comkey="{{$k}}" class="_button data-v-2011f92b">退出登录</button>
     </view>
   </view>
 </template>

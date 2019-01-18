@@ -14,7 +14,7 @@
 			</map>
 		</view>
 		<view class="uni-list-dk">
-			<view @tap="goApply" class="uni-list-cell" v-for="(item,index) in dkList" :key="index">
+			<view @tap="goApply(item.NAME)" class="uni-list-cell" v-for="(item,index) in dkList" :key="index">
 				<view class="cell-l">
 					<image mode="widthFix" :src="item.image" class="img-icon"></image>
 					<view class="dk-wrap">
@@ -68,17 +68,7 @@
 				width: 21,
 				height: 29,
 				iconPath: '/static/img/location.png',
-				markers: [],
-				controls: [{
-					iconPath: '/static/img/center.png',
-					clickable: true,
-					position: {
-						left: 10,
-						top: 30,
-						width: 60,
-						height: 60
-					}
-				}],
+				markers: [],				
 				apply: {
 					ORDER_PRODUCTTYPE: 1,
 					Latitude: uni.getStorageSync('latitude'),
@@ -97,7 +87,7 @@
 				this.timer = null;
 				this.timer = setInterval(()=>{
 					this.socket.emit('findmanger', { longitude, latitude, busnessType });
-				}, 2000);
+				}, 5000);
 			},
 			initSocket() {
 				 const that= this;
@@ -136,16 +126,16 @@
 				});
 				 // 查询附近的信贷经理返回
 				socket.on('positionresult',  (data) => {
-					console.log(JSON.stringify(data))
+					//console.log(JSON.stringify(data))
 					if(data.length){
 						that.markers = data.map((item,index)=>{
 							return {
 								id: item.userID,
 								title: item.NAME,
-								latitude: item.LATITUDE,
-								longitude: item.LONGITUDE,
-								width: 60,
-								height: 90,
+								latitude: parseFloat(item.LATITUDE),
+								longitude: parseFloat(item.LONGITUDE),
+								width: 14,
+								height: 22,
 								iconPath: that.iconPath
 						  }
 						})
@@ -191,7 +181,7 @@
 					}
 				});
 			},
-			goApply() {
+			goApply(title) {
 				if (!this.token) {
 					uni.showToast({
 						title: '请先登录',
@@ -207,7 +197,7 @@
 					return
 				}	
 				uni.navigateTo({
-					url: '/pages/user/userInfo/userInfo'
+					url: '/pages/user/userInfo/userInfo?title=' + title
 				});
 			},
 			goProductShow(id) {

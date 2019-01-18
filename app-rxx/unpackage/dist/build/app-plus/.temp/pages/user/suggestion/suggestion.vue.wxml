@@ -1,8 +1,8 @@
-<template name="0bf3db05">
-  <view class="_view data-v-aed40654 content">
-    <textarea class="_textarea data-v-aed40654 textarea" placeholder="请输入您宝贵的意见" value="{{textarea}}" bindinput="handleProxy" auto-focus placeholder-style="color:#ccc;" data-eventid="{{'xVi-0'}}" data-comkey="{{$k}}" />
-    <view class="_view data-v-aed40654 btn-row">
-      <button type="primary" disabled="{{!textarea}}" bindtap="handleProxy" data-eventid="{{'XB5-1'}}" data-comkey="{{$k}}" class="_button data-v-aed40654">提交</button>
+<template name="220aa37a">
+  <view class="_view data-v-000ae16a content">
+    <textarea class="_textarea data-v-000ae16a textarea" placeholder="请输入您宝贵的意见" value="{{textarea}}" bindinput="handleProxy" auto-focus placeholder-style="color:#ccc;" data-eventid="{{'Wrc-0'}}" data-comkey="{{$k}}" />
+    <view class="_view data-v-000ae16a btn-row">
+      <button type="primary" disabled="{{!textarea}}" bindtap="handleProxy" data-eventid="{{'69f-1'}}" data-comkey="{{$k}}" class="_button data-v-000ae16a">提交</button>
     </view>
   </view>
 </template>

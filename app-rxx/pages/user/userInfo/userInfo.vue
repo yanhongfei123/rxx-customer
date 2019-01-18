@@ -195,6 +195,14 @@
 				//this.changeDisabled()
 			},
 		},
+		onLoad(option) {
+			var title = option.title;
+			if(title){
+				uni.setNavigationBarTitle({
+					title
+				});
+			}
+		},
 		onShow() {
 			// 登陆后个人信息存在本地的userInfo
 			if (this.token) {

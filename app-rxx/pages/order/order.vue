@@ -40,7 +40,6 @@
 				uni.navigateTo({
 					url: `/pages/order-detail/order-detail?orderNumber=${orderNumber}`,
 				});
-			
 			}
 		},
 		onShow() {

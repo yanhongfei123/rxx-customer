@@ -4,11 +4,11 @@
 		<view class="input-group">
 			<view class="input-row">
 				<text class="title">手机号：</text>
-				<input type="text" maxlength="11" placeholder-class="placeholder"  v-model="phone" placeholder="请输入手机号码" />
+				<input type="tel" maxlength="11" placeholder-class="placeholder"  v-model="phone" placeholder="请输入手机号码" />
 			</view>
 			<view class="input-row">
 				<text class="title">验证码：</text>
-				<input type="text" maxlength="4" v-model="smscode" placeholder-class="placeholder" placeholder="请输入短信验证码" />
+				<input type="tel" maxlength="4" v-model="smscode" placeholder-class="placeholder" placeholder="请输入短信验证码" />
 				<!-- <view class="get-code">获取验证码</view> -->
 				<count-down ref="countDown" color="FF9833" size="30" @countDown="getCode"></count-down>
 			</view>

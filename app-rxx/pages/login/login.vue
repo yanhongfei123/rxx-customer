@@ -5,7 +5,7 @@
 			<view class="input-group">
 				<view class="input-row border">
 					<image class="icon-m icon" src="../../static/img/shouji.png" />
-					<uni-input class="uni-input" maxlength="11" type="text" clearable focus v-model="account" placeholder="请输入手机号"></uni-input>
+					<uni-input class="uni-input" maxlength="11" type="tel" clearable focus v-model="account" placeholder="请输入手机号"></uni-input>
 				</view>
 				<view class="input-row">
 					<image class="icon-p icon" src="../../static/img/suo.png" />

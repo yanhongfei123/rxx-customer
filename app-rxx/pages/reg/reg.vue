@@ -4,19 +4,19 @@
 		<view class="input-group">
 			<view class="input-row">
 				<text class="title">姓名：</text>
-				<input type="text" focus  v-model="NAME" placeholder-class="placeholder" placeholder="请输入您的姓名" />
+				<input type="text" focus  v-model="name" placeholder-class="placeholder" placeholder="请输入您的姓名" />
 			</view>
 			<view class="input-row">
 				<text class="title">手机号：</text>
-				<input type="text" maxlength="11" placeholder-class="placeholder" v-model="PHONE" placeholder="请输入手机号码" />
+				<input type="tel" maxlength="11" placeholder-class="placeholder" v-model="phone" placeholder="请输入手机号码" />
 			</view>
 			<view class="input-row">
 				<text class="title">密码：</text>
-				<input type="password"  placeholder-class="placeholder" v-model="PASSWORD" placeholder="请输入密码" />
+				<input type="password"  placeholder-class="placeholder" v-model="password" placeholder="请输入密码" />
 			</view>
 			<view class="input-row">
 				<text class="title">验证码：</text>
-				<input type="text" placeholder-class="placeholder" maxlength="6" v-model="smscode" placeholder="请输入短信验证码" />
+				<input type="tel" placeholder-class="placeholder" maxlength="6" v-model="smscode" placeholder="请输入短信验证码" />
 				<!-- <view @tap="getCode" class="get-code">获取验证码</view> -->
 				<count-down ref="countDown" color="FF9833" size="30" @countDown="getCode"></count-down>
 			</view>
@@ -39,7 +39,7 @@
 		},
 		computed: {
 			_disabled() {
-				if (this.NAME && this.PHONE && this.PASSWORD && this.smscode) {
+				if (this.name != "" && this.phone != "" && this.password != "" && this.smscode != "") {
 					return false
 				}
 				return true;
@@ -48,9 +48,9 @@
 		data() {
 			return {
 				disabled: false,
-				NAME: '',
-				PHONE: '',
-				PASSWORD: '',
+				name: '',
+				phone: '',
+				password: '',
 				smscode: ''
 			}
 		},
@@ -62,13 +62,13 @@
 				var errorMsg = this.validateMobileFunc();
 				if (errorMsg) {
 					this.Util.Toast.toast(errorMsg);
-					return
+					return;
 				}
 				console.log(this.disabled)
 				if(!this.disabled){
 					this.disabled = true;
 					this.API.sendMsg({
-						phone: this.PHONE,
+						phone: this.phone,
 						type: 1
 					}).then(res => {
 						// 短信发送成功才能开始倒计时
@@ -87,9 +87,9 @@
 					return
 				}
 				var params = {
-					NAME: this.NAME,
-					PHONE: this.PHONE,
-					PASSWORD: this.PASSWORD,
+					NAME: this.name,
+					PHONE: this.phone,
+					PASSWORD: this.password,
 					smscode: this.smscode
 				}
 				this.API.registerCustomer(params).then(res => {
@@ -103,7 +103,7 @@
 			validateMobileFunc: function() {
 				var validator = new Validator(strategys); // 创建一个Validator对象
 				/* 添加一些效验规则 */
-				validator.addRules(this.PHONE, [{
+				validator.addRules(this.phone, [{
 						'strategy': 'mobile',
 						'errorMsg': '请输入正确的手机号'
 					}],
@@ -117,7 +117,7 @@
 			validateFunc: function() {
 				var validator = new Validator(strategys); // 创建一个Validator对象
 				/* 添加一些效验规则 */
-				validator.addRules(this.NAME, [{
+				validator.addRules(this.name, [{
 						'strategy': 'isEmpty',
 						'errorMsg': '请输入姓名'
 					}],
@@ -125,7 +125,7 @@
 						console.log('验证通过');
 					}
 				);
-				validator.addRules(this.PHONE, [{
+				validator.addRules(this.phone, [{
 						'strategy': 'mobile',
 						'errorMsg': '请输入正确的手机号'
 					}],
@@ -133,7 +133,7 @@
 						console.log('验证通过');
 					}
 				);
-				validator.addRules(this.PASSWORD, [{
+				validator.addRules(this.password, [{
 						'strategy': 'minLength:5',
 						'errorMsg': '密码长度不能少于5个字符'
 					}],

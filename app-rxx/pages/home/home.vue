@@ -83,14 +83,12 @@
 				var longitude = this.longitude;
 				var latitude = this.latitude;
 				var busnessType = this.oIndex + 1;
-				if(this.socket){
+				this.socket.emit('findmanger', { longitude, latitude, busnessType });
+				clearInterval(this.timer);
+				this.timer = null;
+				this.timer = setInterval(()=>{
 					this.socket.emit('findmanger', { longitude, latitude, busnessType });
-					clearInterval(this.timer);
-					this.timer = null;
-					this.timer = setInterval(()=>{
-						this.socket.emit('findmanger', { longitude, latitude, busnessType });
-					}, 5000);
-				}
+				}, 5000);
 			},
 			initSocket() {
 				 const that= this;

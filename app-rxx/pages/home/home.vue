@@ -7,7 +7,7 @@
 		</view>
 
 		<view class="map-content">
-			<map class='map' :class="[showmap?'showmap':'']" id="myMap" :scale="18" :latitude="latitude" :longitude="longitude"
+			<map class='map' :class="[showMap?'showmap':'']" id="myMap" :scale="18" :latitude="latitude" :longitude="longitude"
 			 :markers="markers" show-location @markertap="bindmarkertap" @tap="bindtap" @controltap="toCenter">
 				<cover-image @tap="toCenter" class="cover-img1" src="../../static/img/center.png"></cover-image>
 				<cover-image @tap="appoint" class="cover-img" src="../../static/img/findjl.png"></cover-image>
@@ -74,7 +74,8 @@
 					Latitude: uni.getStorageSync('latitude'),
 					Longitude: uni.getStorageSync('longitude')
 				},
-				//hasConnected: false,
+				socket: null,
+				hasConnected: false
 			}
 		},
 		methods: {
@@ -82,12 +83,14 @@
 				var longitude = this.longitude;
 				var latitude = this.latitude;
 				var busnessType = this.oIndex + 1;
-				this.socket.emit('findmanger', { longitude, latitude, busnessType });
-				clearInterval(this.timer);
-				this.timer = null;
-				this.timer = setInterval(()=>{
+				if(this.socket){
 					this.socket.emit('findmanger', { longitude, latitude, busnessType });
-				}, 5000);
+					clearInterval(this.timer);
+					this.timer = null;
+					this.timer = setInterval(()=>{
+						this.socket.emit('findmanger', { longitude, latitude, busnessType });
+					}, 5000);
+				}
 			},
 			initSocket() {
 				 const that= this;
@@ -206,17 +209,17 @@
 				});
 			},
 			changeTab(index) {
-				this.oIndex = index;			
-				this.findmanger();						
+				this.oIndex = index;
+				this.findmanger();
 			},
 			bindmarkertap() {
-				console.log('marker被点击')
+				console.log('marker被点击');
 			},
 			bindtap() {
-				console.log('map被点击')
+				console.log('map被点击');
 			},
 			toCenter() {
-				this.mapCtx.moveToLocation()
+				this.mapCtx.moveToLocation();
 			},
 			getLocation() {
 				// 微信获得经纬度
@@ -230,11 +233,9 @@
 						uni.setStorageSync('longitude', longitude);
 
 						that.latitude = latitude;
-						that.longitude = longitude;	
-						
-						//that.Util.Toast.toast("定位成功")
-						//that.initSocket();											
-					    !that.hasConnected  && that.initSocket();								
+						that.longitude = longitude;
+						that.Util.Toast.toast("定位成功")
+						that.initSocket();
 					},
 					fail: function(res) {
 						that.Util.Toast.toast("获取定位失败");
@@ -256,6 +257,7 @@
 			this.mapCtx = uni.createMapContext('myMap');
 			this.toCenter();
 			this.getLocation();
+			this.initSocket();
 			//plus.nativeUI.alert(plus.os.name.toLowerCase());					 						
 			// 			plus.geolocation.getCurrentPosition(function(p){
 			// 				plus.nativeUI.alert('Latitude:' + p.coords.latitude);
@@ -288,7 +290,6 @@
 <style lang="scss">
 	.map-content {
 		position: relative;
-
 	}
 
 	.canvas {

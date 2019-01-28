@@ -166,6 +166,10 @@
 		},
 		methods: {
 			save() {
+				if (!this.user.AGE) {
+					this.Util.Toast.success("请填写年龄");
+					return
+				}
 				this.API.updateUserinfo(this.user).then(res => {
 					this.Util.Toast.success("保存成功");
 					uni.setStorageSync('userInfo', JSON.stringify(res.data));

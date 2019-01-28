@@ -83,28 +83,25 @@
 				var longitude = this.longitude;
 				var latitude = this.latitude;
 				var busnessType = this.oIndex + 1;
-				this.socket.emit('findmanger', { longitude, latitude, busnessType });
-				clearInterval(this.timer);
-				this.timer = null;
-				this.timer = setInterval(()=>{
+				if(this.socket){
 					this.socket.emit('findmanger', { longitude, latitude, busnessType });
-				}, 5000);
+					clearInterval(this.timer);
+					this.timer = null;
+					this.timer = setInterval(()=>{
+						this.socket.emit('findmanger', { longitude, latitude, busnessType });
+					}, 5000);
+				}
 			},
 			initSocket() {
 				 const that= this;
-				 const socket = (this.socket = io(
-				  'http://rancher.rongxiaoxiao.com/',
-				));				
+				 const socket = io(
+				  'http://rancher.rongxiaoxiao.com/'
+				);	
+				 this.socket  =  socket;			
 				 socket.on('connect', () => {
-					 this.Util.Toast.toast('connect')
+					this.Util.Toast.toast('connect')
 					this.changeTab(0);
 					this.hasConnected = true;
-// 					if(this.token){
-// 						this.Util.Toast.toast('88888888888888')
-// 						socket.emit('oauth', {
-// 							token: this.token
-// 						});						
-// 					}
 				});
 				
 				if(this.token){
@@ -114,7 +111,7 @@
 				}
 				
 				socket.on('oauthresult', (data) => {
-					this.Util.Toast.toast('token认证结果:' + JSON.stringify(data));
+					this.Util.Toast.toast('token认证成功');
 				});
 							
 				socket.on('orderchange',  (data) => {
@@ -127,7 +124,6 @@
 				});
 				 // 查询附近的信贷经理返回
 				socket.on('positionresult',  (data) => {
-					//console.log(JSON.stringify(data))
 					if(data.length){
 						that.markers = data.map((item,index)=>{
 							return {
@@ -141,8 +137,7 @@
 						  }
 						})
 						
-					}
-						
+					}			
 				});
 		
 				socket.on('connect_error', d => {
@@ -173,11 +168,6 @@
 					if (res.confirm) {
 						this.API.createOrder(this.apply).then(res => {
 							this.Util.Toast.toast("预约成功");
-// 							setTimeout(() => {
-// 								uni.switchTab({
-// 									url: '/pages/order/order'
-// 								})
-// 							}, 2000)
 						});
 					}
 				});
@@ -211,10 +201,10 @@
 				this.findmanger();
 			},
 			bindmarkertap() {
-				console.log('marker被点击');
+				//console.log('marker被点击');
 			},
 			bindtap() {
-				console.log('map被点击');
+				//console.log('map被点击');
 			},
 			toCenter() {
 				this.mapCtx.moveToLocation();
@@ -233,7 +223,8 @@
 						that.latitude = latitude;
 						that.longitude = longitude;
 						that.Util.Toast.toast("定位成功")
-						that.initSocket();
+						
+						!that.hasConnected  &&  that.initSocket();
 					},
 					fail: function(res) {
 						that.Util.Toast.toast("获取定位失败");
@@ -243,32 +234,14 @@
 			},
 			
 		},
-		onLoad() {
-					
-		},
 		onUnload() {
-			clearInterval(this.timer);
-			this.timer = null;
-			//this.socket.disconnect();
+			
 		},
 		onShow() {		
 			this.mapCtx = uni.createMapContext('myMap');
 			this.toCenter();
 			this.getLocation();
-			this.initSocket();
-			//plus.nativeUI.alert(plus.os.name.toLowerCase());					 						
-			// 			plus.geolocation.getCurrentPosition(function(p){
-			// 				plus.nativeUI.alert('Latitude:' + p.coords.latitude);
-			// 				plus.nativeUI.alert('longitude:' + p.coords.longitude);							
-			// 			}, function(e){			
-			// 				plus.nativeUI.alert('经纬度获取shibai==' + e.messagee);
-			// 			}, {
-			// 				provider: plus.os.name.toLowerCase() == 'ios'?"system":"amap",
-			// 				//geocode: true,
-			// 				//timeout: 10000,
-			// 				coordsType: plus.os.name.toLowerCase() == 'ios'?"wgs84":"gcj02"
-			// 			});
-
+						
 			// 贷款类型
 			this.API.getProductList({
 				type: 2

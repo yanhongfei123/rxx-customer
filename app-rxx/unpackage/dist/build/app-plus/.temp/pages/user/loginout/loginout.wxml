@@ -1,1 +1,0 @@
-<import src="/pages/user/loginout/loginout.vue.wxml" /><template is="4df97cda" data="{{ ...$root['0'], $root }}"/>

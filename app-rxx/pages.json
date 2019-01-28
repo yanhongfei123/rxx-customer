@@ -55,7 +55,7 @@
 			}
 		},
 		{
-			"path": "pages/user/user/user.vue",
+			"path": "pages/user/user/user",
 			"style": {
 				"navigationBarTitleText": "个人中心"
 			}

@@ -64,6 +64,9 @@
 		},
 		methods: {
 			save() {
+				if(!uni.getStorageSync('latitude') || !uni.getStorageSync('longitude')){
+					this.Util.Toast.toast("申请失败，请重新申请");
+				}
 				this.API.createOrder(this.apply).then(res => {
 					this.Util.Toast.toast("申请成功");
 					setTimeout(() => {

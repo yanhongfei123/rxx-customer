@@ -1,3 +1,0 @@
-<template name="2521cf3e">
-  <view class="_view data-v-59e70962 get-code" bindtap="handleProxy" data-eventid="{{'UQx-0'}}" data-comkey="{{$k}}" style=" {{('color:' + color + ';' + 'font-size:' + fontSize + ';')}}">{{ countMsg }}</view>
-</template>
